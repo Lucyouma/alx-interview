@@ -44,7 +44,7 @@ if __name__ == "__main__":
                 if (code.isdecimal()):
                     log["code_frequency"][code] += 1
 
-                    if (line_count % 10 == 0):
-                        output(log)
+                if (line_count % 10 == 0):
+                    output(log)
     finally:
         output(log)
