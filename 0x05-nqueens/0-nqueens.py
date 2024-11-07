@@ -62,7 +62,7 @@ if __name__ == "__main__":
         if nn < 4:
             print("N must be at least 4")
             sys.exit(1)
-    nqueens(nn)
-except ValueError:
+        nqueens(nn)
+    except ValueError:
     print("N must be a number")
     sys.exit(1)
