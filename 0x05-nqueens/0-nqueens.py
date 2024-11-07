@@ -11,7 +11,7 @@ def backtrack(r, n, cols, pos, neg, board):
     """
     if r == n:
         res = []
-        for l in range(len(board)):
+        for 1 in range(len(board)):
             for k in range(len(board[l])):
                 if board[l][k] == 1:
                     res.append([l, k])
@@ -21,7 +21,7 @@ def backtrack(r, n, cols, pos, neg, board):
     for c in range(n):
         if c in cols or (r + c) in pos or (r - c) in neg:
             continue
-        
+
         cols.add(c)
         pos.add(r + c)
         neg.add(r - c)
