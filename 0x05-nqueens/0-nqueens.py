@@ -11,7 +11,7 @@ def backtrack(r, n, cols, pos, neg, board):
     """
     if r == n:
         res = []
-        for 1 in range(len(board)):
+        for l in range(len(board)):
             for k in range(len(board[l])):
                 if board[l][k] == 1:
                     res.append([l, k])
@@ -64,5 +64,5 @@ if __name__ == "__main__":
             sys.exit(1)
         nqueens(nn)
     except ValueError:
-    print("N must be a number")
-    sys.exit(1)
+        print("N must be a number")
+        sys.exit(1)
