@@ -62,7 +62,7 @@ def rm_multiples(ls, x):
 
     Returns:
         None.
-    
+
     Raises:
         None.
     """
@@ -72,7 +72,7 @@ def rm_multiples(ls, x):
     # length of ls to 0. If the index i * x is out of range for the list ls,
     # the try block will raise an IndexError exception, and the loop will
     # terminate using the break statement.
-    for i in range(2, len(ls)): 
+    for i in range(2, len(ls)):
         try:
             ls[i * x] = 0
         except (ValueError, IndexError):
